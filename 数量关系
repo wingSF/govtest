@@ -2,9 +2,17 @@
 一、原来200+人，平均分x组，后来每组加b人，分x+（1或2）组，总人数变成 （200+x）的1.5倍
 解：从选项b开始尝试，取变化量尝试整除，并找到合理答案
 
-图形理论
+图形
 1.图形中奇点个数大于2就没法一笔画出来
 2.奇点指多个线段交汇的点，如果线段个数为奇数，则为奇点
 3.走完一个图的所有边，最少路程问题？先看是否能一笔画，不能则在最短的线段上重复一次，让奇数变成非奇数，以此类推将图形中的奇数个数变成<=2，此时就是最短路径
 一、两个等边三角形拼在一起变成菱形（abcd），ab中点e，cd中点f，ad、bc、ce、bf相连，问走完所有线段最少路程（https://private-user-images.githubusercontent.com/25545556/443102542-610f5e5b-af05-4cd4-abb2-1670feba4eb3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxMjM4NDYsIm5iZiI6MTc0NzEyMzU0NiwicGF0aCI6Ii8yNTU0NTU1Ni80NDMxMDI1NDItNjEwZjVlNWItYWYwNS00Y2Q0LWFiYjItMTY3MGZlYmE0ZWIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTEzVDA4MDU0NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE5NWUwMDNkMDkyOTQxMjM4MjY1YjJiZmQzNjMzZjA4ZTYwZmUyZjA5MTExYmFmMjMxYjA5MTQxMmNkMTFiOTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2z3XBmo4ofyVMNPrvf0lR7-A5S4SidvfJDWZqLIlpmM）
 解：图中4个奇点（a、d、e、f），不是一笔画，将ad或者（ce、bf）走两次，奇点数降低到2，即可变成一笔画，恰好ad = ce + bf。最小路程 = 800(周长)+ 200（bc） + 100√3 * 2（bf、ce） + 200√3  * 2（ 2 * ad）
+
+行程
+一、甲乙同时8点从a出发，甲10点到达b，乙10点40到达b，稍作休息后同时出发，但后半段乙提速50%，比甲早15min达到c地。问甲中间不休息，几点达到c
+注：知道速度比例，结合路程相等场景，早晚多少时间可以得出全路程时间
+解：前半段能得到甲乙的速度比，后半段根据速度的比例变化 结合bc路程固定，可以得出后半段甲乙的行驶时间，加上前半段可以得出结论。
+
+
+
